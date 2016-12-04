@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>CLM MiniTable Modul</name>
+	<author>Fjodor Schafer</author>
+	<creationDate>18.04.2015</creationDate>
+	<copyright>(C) 2011 vonfio.de All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>ich@vonfio.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>3.0.4</version>
+	<description>
+		<![CDATA[
+			 <h3>Chess League Manager : MiniTable Modul</h3>
+			 <p>Modul zur Darstellung von Ligatabellen für den öffentlichen Bereich.</p>
+			 <p><a target="_blank" href="http://www.chessleaguemanager.de">CLM Projekt Homepage</a></p>
+			 <p>&copy; Fjodor Schäfer [<a target="_blank" href="http://www.vonfio.de">www.vonfio.de</a>]</p>
+			 ]]>
+		 </description>
+
+	<files>
+	
+		<filename module="mod_clm_minitab">mod_clm_minitab.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.txt</filename>
+		<folder>tmpl/</folder>
+		
+	</files>
+	
+	<config><fields name="params"><fieldset name="basic" label="basic">
+		<field name="liga" type="sql" default="1" label="Liga auswählen" query="
+		SELECT a.id AS value, concat(  s.name, ' -- ', a.name ) AS name 
+		FROM #__clm_liga AS a LEFT JOIN #__clm_saison as s ON s.id = a.sid " value_field="name" />
+		
+		<field name="spacer" type="spacer" />
+		
+		<field name="altItemid" type="text" default="" label="Alternative Itemid" />
+		
+		<field name="spacer" type="spacer" />
+		
+		<field name="show_zps" type="radio" default="1" label="Mannschaften hervorheben">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="zps" type="sql" default="1" label="Verein" query="SELECT zps AS value, name FROM #__clm_vereine ORDER BY name ASC" value_field="name" />
+		<field name="bold" type="text" default="font-weight: bold; background-color:#EEE;" label="CSS Style" size="50" />
+		<field name="spacer" type="spacer" />
+		
+		<field name="show_th" type="radio" default="1" label="Überschrift anzeigen">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_aufab" type="radio" default="0" label="Auf- und Absteiger anzeigen">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_mp" type="radio" default="1" label="MP anzeigen">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_bp" type="radio" default="1" label="BP anzeigen">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+
+   </fieldset>	
+	</fields></config>
+</extension>
+ 

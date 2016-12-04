@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>CLM Login Modul</name>
+	<author>CLM Team</author>
+	<creationDate>06.01.2016</creationDate>
+	<copyright>(C) 2008 - 2016 CLM Project All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>fishpoke@fishpoke.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>3.2.8</version>
+	<description>MOD_CLM_LOG_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_clm_log">mod_clm_log.php</filename>
+		<filename>changelog.txt</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>language/</folder>
+		<folder>tmpl/</folder>
+
+	</files>
+	<config><fields name="params"><fieldset name="basic" label="basic">
+		<field name="klasse" type="radio" default="0" label="MOD_CLM_LOG_PARAM_SHOW_LEAGUE_LABEL" description="MOD_CLM_LOG_PARAM_SHOW_LEAGUE_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="runden" type="radio" default="0" label="MOD_CLM_LOG_PARAM_UNPUBLISHED_ROUNDS_LABEL" description="MOD_CLM_LOG_PARAM_UNPUBLISHED_ROUNDS_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="vereinsdaten" type="radio" default="1" label="MOD_CLM_LOG_PARAM_SHOW_CLUBDATA_LABEL" description="MOD_CLM_LOG_PARAM_SHOW_CLUBDATA_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="altItemid" type="text" default="" label="MOD_CLM_LOG_PARAM_ITEMID_LABEL" description="MOD_CLM_LOG_PARAM_ITEMID_DESC" />
+	</fieldset>
+	<fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+
+   </fieldset>	
+	</fields></config>
+</extension>

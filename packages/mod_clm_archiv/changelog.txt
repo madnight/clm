@@ -1,0 +1,41 @@
+﻿CHANGELOG mod_clm_archiv ab 1.0.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 3.3.1 - [13-09-2016] - - - - - - - - - - - - - - - - - - - -
++ Einbau alternative ItemID
+
+- - - - - 3.3.0 - [03-07-2016] - - - - - - - - - - - - - - - - - - - -
++ Einbau Mehrsprachigkeit
+
+- - - - - 3.2.3 - [06-08-2015] - - - - - - - - - - - - - - - - - - - -
++ Erweiterung Einzelturniere
+# Ligen: Unterscheidung KO-System und andere Systeme
+
+- - - - - 3.2.2 - [18-04-2015] - - - - - - - - - - - - - - - - - - - -
+! Vermeidung gleicher Versionsnummern in verschiedenen CLM Versionen
+
+- - - - - 1.2.2 - [24-01-2015] - - - - - - - - - - - - - - - - - - - -
+^ Konfigurationsmöglichkeiten in "Erweitert" vergrößert
+
+- - - - - 1.2.1 - [25-05-2014] - - - - - - - - - - - - - - - - - - - -
+^ PHP 4.X Unterstützung enfernt -> Joomla 3.2 Support
+
+- - - - - 1.2.0 - [18-04-2014] - - - - - - - - - - - - - - - - - - - -
+# Parametereingabe
+
+- - - - - 1.1.2 - [03-05-2013] - - - - - - - - - - - - - - - - - - - -
+^ Code-Bereinigung
+
+- - - - - 1.1.1 - [16-10-2012] - - - - - - - - - - - - - - - - - - - -
++ Einbau changelog
+# störendes Aufreißen des Modulmenüs verhindert durch URL-Test 

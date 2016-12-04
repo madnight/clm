@@ -1,0 +1,29 @@
+﻿CHANGELOG mod_clm_minitab ab 1.0.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 3.0.4 - [18-04-2015] - - - - - - - - - - - - - - - - - - - -
+! Vermeidung gleicher Versionsnummern in verschiedenen CLM Versionen
+
+- - - - - 1.0.4 - [23-01-2015] - - - - - - - - - - - - - - - - - - - -
+^ Konfigurationsmöglichkeiten in "Erweitert" vergrößert
+
+- - - - - 1.0.3 - [25-05-2014] - - - - - - - - - - - - - - - - - - - -
+^ PHP 4.x Unterstützung enfernt -> Joomla 3.2 Support
+
+- - - - - 1.0.2 - [07-05-2013] - - - - - - - - - - - - - - - - - - - -
+^ Code-Bereinigung
+
+- - - - - 1.0.1 - [25-09-2012] - - - - - - - - - - - - - - - - - - - -
++ Einbau changelog
+# css für eventuelle Aufsteiger
+

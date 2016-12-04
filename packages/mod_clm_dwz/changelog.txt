@@ -1,0 +1,31 @@
+﻿CHANGELOG mod_clm_dwz ab 1.0.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 3.1.1 - [18-04-2015] - - - - - - - - - - - - - - - - - - - -
+! Vermeidung gleicher Versionsnummern in verschiedenen CLM Versionen
+
+- - - - - 1.1.1 - [23-01-2015] - - - - - - - - - - - - - - - - - - - -
++ Mehrere Vereine (, als Trennzeichen)
++ Alle Vereine
++ Wechsel zwischen DWZ Übersicht und Vereinsdetails
+^ Konfigurationsmöglichkeiten in "Erweitert" vergrößert
+# Strict Standard
+- Desintegration von com_clm_dwz da veraltet 
+
+- - - - - 1.1.0 - [25-05-2014] - - - - - - - - - - - - - - - - - - - -
+^ PHP 4.x Unterstützung enfernt -> Joomla 3.2 Support
+
+- - - - - 1.0.0 - [22-11-2012] - - - - - - - - - - - - - - - - - - - -
++ Einbau changelog
++ Integration einer DWZ-Liste in den CLM-Baum
+

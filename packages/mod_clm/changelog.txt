@@ -1,0 +1,59 @@
+CHANGELOG mod_clm ab 1.1.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 3.2.6 - [29-11-2015] - - - - - - - - - - - - - - - - - - - -
++ Englisches Sprachfile
+
+- - - - - 3.2.5 - [22-04-2015] - - - - - - - - - - - - - - - - - - - -
+^ Auswahl von Ligen oder Mannschaftsturnieren ohne IDs wieder möglich
+
+- - - - - 3.2.4 - [18-04-2015] - - - - - - - - - - - - - - - - - - - -
+! Vermeidung gleicher Versionsnummern in verschiedenen CLM Versionen
+
+- - - - - 1.2.4 - [04-04-2015] - - - - - - - - - - - - - - - - - - - -
+^ itemid nun überschreibbar
+
+- - - - - 1.2.3 - [31-03-2015] - - - - - - - - - - - - - - - - - - - -
++ Ausklappmenü kann deaktiviert werden
+^ Es können sowohl Ligen als auch Mannschaftsturniere zur gleichen Zeit aufgelistet werden
+
+- - - - - 1.2.2 - [24-01-2015] - - - - - - - - - - - - - - - - - - - -
+^ Konfigurationsmöglichkeiten in "Erweitert" vergrößert
+
+- - - - - 1.2.1 - [25-05-2014] - - - - - - - - - - - - - - - - - - - -
+$ Install-Nachricht
+# Rundenname bei mehreren Durchgängen
+^ PHP 4.x Unterstützung enfernt -> Joomla 3.2 Support
+
+- - - - - 1.2.0 - [12-02-2014] - - - - - - - - - - - - - - - - - - - -
++ Parameter IDs von Ligen/Mannschaftsturnieren
++ Parameter Modulklassensuffix
++ Sprachfile für Parameter hinzugefügt
+$ Verbliebende Texte des Templates aus Sprachfiles eingebunden
+
+- - - - - 1.1.4 - [16-08-2013] - - - - - - - - - - - - - - - - - - - -
++ Ligen mit 3 oder 4 Durchgängen zugelassen
+
+- - - - - 1.1.3 - [23-07-2013] - - - - - - - - - - - - - - - - - - - -
+# Aufruf über Menü-Eintrag wieder ermöglichen
+
+- - - - - 1.1.2 - [17-06-2013] - - - - - - - - - - - - - - - - - - - -
+# Liegt keine Liga vor, wird aktuelle Saison für Vereinsliste verwendet
+
+- - - - - 1.1.1 - [03-05-2013] - - - - - - - - - - - - - - - - - - - -
+^ Code-Bereinigung
+
+- - - - - 1.1.0 - [10-08-2012] - - - - - - - - - - - - - - - - - - - -
+^ Verwendung von Rundennamen
++ Anpassung KO-Turniere mit kleinen Finale
+

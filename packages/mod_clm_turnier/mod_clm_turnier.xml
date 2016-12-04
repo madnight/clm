@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>CLM Modul Turnier</name>
+	<author>Helge Frowein</author>
+	<creationDate>22.05.2015</creationDate>
+	<copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>helge-frowein@online.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>3.0.8</version>
+	<description>CLM_MODULE_TURNIER_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_clm_turnier">mod_clm_turnier.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl/</folder>
+		<folder>language/</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="de-DE">de-DE/de-DE.mod_clm_turnier.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_clm_turnier.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="PARAMS_BASIC">
+				<field name="categoryid" type="sql" default="0" label="CATEGORY" description="CATEGORY_DESC" query="SELECT id AS value, name AS categoryid FROM #__clm_categories ORDER BY ordering">
+					<option value="0">PARAMETER_SELECT</option>
+				</field>
+				<field name="turnierid" type="sql" default="0" label="TOURNAMENTS" description="TOURNAMENTS_DESC" query="SELECT id AS value, name AS turnierid FROM #__clm_turniere WHERE published = 1 ORDER BY ordering" multiple="multiple">
+					<option value="0">PARAMETER_SELECT</option>
+				</field>
+				<field name="basic_comment" type="spacer" label="BASIC_COMMENT"/>
+			</fieldset>
+				
+			<fieldset name="links" label="PARAMS_LINKS">
+				<field name="namelinksto" type="list" default="4" label="NAMELINKSTO" description="NAMELINKSTO_DESC">
+					<option value="4">NAMELINKSTO_4</option>
+					<option value="0">NAMELINKSTO_0</option>
+					<option value="1">NAMELINKSTO_1</option>
+					<option value="2">NAMELINKSTO_2</option>
+					<option value="3">NAMELINKSTO_3</option>
+					<option value="6">NAMELINKSTO_6</option>
+					<option value="5">NAMELINKSTO_5</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="linkplayerslist" type="radio" default="1" label="LINKPLAYERSLIST" description="LINKPLAYERSLIST_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="linkroundseach" type="radio" default="1" label="LINKROUNDSEACH" description="LINKROUNDSEACH_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="showunpublishedrounds" type="radio" default="0" label="SHOWUNPUBLISHEDROUNDS" description="SHOWUNPUBLISHEDROUNDS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="linkmatchescomplete" type="radio" default="0" label="LINKMATCHESCOMPLETE" description="LINKMATCHESCOMPLETE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="linktable" type="radio" default="0" label="LINKTABLE" description="LINKTABLE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="linkrankingscore" type="radio" default="1" label="LINKRANKINGSCORE" description="LINKRANKINGSCORE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="linkdwz" type="radio" default="1" label="LINKDWZ" description="LINKDWZ_DESC">
+					<option value="0">JNO</option>
+					<option value="1">DWZYES</option>
+				</field>
+				<field name="textrankingscore" type="text" default="" label="TEXTRANKINGSCORE" description="TEXTRANKINGSCORE_DESC"/>
+				<field name="rankingscoreorderby" type="radio" default="1" label="RANKINGSCOREORDERBY" description="RANKINGSCOREORDERBY_DESC">
+					<option value="1">RANKINGSCOREORDERBY_1</option>
+					<option value="2">RANKINGSCOREORDERBY_2</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="linkinvitation" type="radio" default="0" label="LINKINVITATION" description="LINKINVITATION_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="extras" label="PARAMS_EXTRAS">
+				<field name="shownotes" type="radio" default="0" label="SHOWNOTES" description="SHOWNOTES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="contentid" type="text" default="" label="CONTENTID" description="CONTENTID_DESC" />
+				<field name="contenttext" type="text" default="" label="CONTENTTEXT" description="CONTENTTEXT_DESC"/>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="textbottom" type="textarea" rows="3" cols="50" default="" label="TEXTBOTTOM" description="TEXTBOTTOM_DESC" />
+				<field name="itemid" type="text" default="" label="ITEMID" description="ITEMID_DESC"/>
+			</fieldset>
+
+			<fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+
+            </fieldset>			
+			
+		</fields>
+	</config>
+	
+</extension>
+ 

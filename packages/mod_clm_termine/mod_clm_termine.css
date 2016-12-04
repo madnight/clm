@@ -1,0 +1,66 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family:verdana;
+    font-size:12px;
+}
+.kalender {
+	width:140px  !important;
+	border-color:#FFF;
+	padding: 3px;
+}
+.kalender div.after,
+.kalender div.before{
+    color:silver;
+}
+.kalender .tag {
+    float:left;
+    width:20px  !important;
+    height:20px  !important;
+    line-height: 20px;
+    text-align: center;
+}
+.kalender  .tag.kal_top {
+	background-color:#DDDDDD;
+	font-weight: bold;
+}
+.tag.heute {
+	font-weight: bold;
+	background-color: #EEE !important;
+}
+.tag.heute  a{
+	color: red;
+}
+.tag.event {
+	font-weight:bold;
+	background-color: #EEE !important;
+}
+.clear {
+    clear:left;
+}
+.kal_pagination {
+	text-align: center;
+	line-height:20px;
+	font-weight: bold;
+	background-color:#DDDDDD;
+}
+.kal_pagination a {
+    width:10px;
+    height:20x;
+    float:left;
+    color:white;
+	background-color:#DDDDDD;
+}
+.kal_pagination span a {
+    display:block;
+    float:left;
+    width: 98.5px;
+	color:black;
+	background-color:#DDDDDD;
+}
+.clear {
+    clear:both;
+}
+

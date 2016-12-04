@@ -1,0 +1,152 @@
+CHANGELOG com_clm ab 3.2.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+> -> Compatibility
+- -> Removed
+! -> Note
+
+- - - - - 3.3.4 - [xx-xx-2016] - - - - - - - - - - - - - - - - - - - -
+
+- - - - - 3.3.3 - [13-10-2016] - - - - - - - - - - - - - - - - - - - -
+# View Mannschaft: deutsche Meldeliste mit PKZ-Angaben
+# Admin-View Auswertung: Turniername mit Umlaut bei DeWIS-Export
+# Admin-View Ergebnisse: Kampflossetzen in englischer Anwendung
+# DWZ-Routine: Ausschluss von angesetzten aber noch nicht gespielten Paarungen
+# Admin-View Meldeliste: Apply-Button bei englischer Anwendung
+# Einzelturniere: Ranglistenermittlung bei wenig Teilnehmern
+# Admin-View Ergebnisse: Übernahme Bemerkung bei 'Turnierwertung ändern'
++ Admin-View Verein Mitgliederverwaltung: Umsetzen von Spieler, nur englische Anwendung
+# class idna_convert Mehrfachverwendung Email-Adressen-Check
++ View Mannschaft: Anzeige der Partnervereine
++ Routenplaner sprachabhängig
+
+- - - - - 3.3.2 - [06-09-2016] - - - - - - - - - - - - - - - - - - - -
++ Ergebnis 0-0,5 bzw. 0,5-0 eingebaut
+# Admin View Liga/MTurniere: Prüfung Rundenanzahl
++ SWT-Import: Hochgeladene Datei Standard für Import
++ SWT-Import: Zuordnung SWT-Dateiname zu Liga/Turnier
+# DeWIS-Dateiausgabe: Anpassung PHP7
+# DB-Update (u.a. Saison): Anpassung PHP7
+# View Paarungliste: Datum pro Paarung bei 3/4 Durchgängen
+# pdf-Terminliste: lange Namen in Spalte 2
+# Admin-View Liga: Kopieren von Ligen
+# class idna_convert Mehrfachverwendung
+# Admin-View Mitglieder: Nachmeldung 1.Spieler
+# View Mannschaft: Anzeige von organisierten Spieler beim Schulschach
+
+- - - - - 3.3.1 - [09-07-2016] - - - - - - - - - - - - - - - - - - - -
++ View Runde: pdf-Formular Spielbericht über Liga-Parameter
+# Englisch: Minitextkorrektur
++ Menüeintragstyp Terminliste mit Selektion CLM-Kategorie
+# SWT-Import Einzel: pgn bleibt erhalten bei Update
+# pdf-Listen: Nachbesserung insb. für große Mannschaftsturniere
+# pdf-Terminlisten: Mehrsprachigkeit
+# Backend-Rundenübersicht: Abbruchfehler bei archivierten Ligen
+# Vereindatenpflege: Mehrsprachigkeit
+# View Spieler: Gespielte Partien vollständig
+# View Mannschaft: Zuordnung Ergebnisse (nur engl. Anwendung)
+- View Spieler: Link zur DSB-Karteikarte entfernt
+# Englisch: überarbeitete Sprachfiles
+^ Views Paarungsliste/Runde: keine Anzeige bei spielfrei vs. spielfrei
+^ Admin-View Ergebniskorrektur: erhöhter Wertebereich wegen JRCup
+# View aktuelle Runde: sql bei engl. Anwendung
++ Admin-View Ergebniskorrektur: Erweiterung für KO-Turniere
+
+- - - - - 3.3.0 - [27-04-2016] - - - - - - - - - - - - - - - - - - - -
+# Korrektur englischer Texte / Mehrsprachigkeit
++ Einzelturniere: Aktivierung für Anwendung England
+^ Termine: Umstellung auf CLM-Kategorien 
+# Code-Nachbesserungen
+
+- - - - - 3.2.5 - [02-04-2016] - - - - - - - - - - - - - - - - - - - -
++ Feinwertung MTurnier: Buchholz mit FIDE-Ranglistenkorrektur
+# SWT-Import MTurnier: Marker FIDE-Ranglistenkorrektur
++ Mannschaft: Abzug von Brettpunkten
+# Mannschaft: Abzug von Mannschaftspunkten
+# Nachbesserung Mehrsprachigkeit (einf. Tabelle, pdf-Footer)
+# Admin Ergebnisse: Verbesserung Fehlermeldung bei Nichtauswahl
++ MTurniere: auch 3 bzw. 4 Durchgänge möglich
+# SWT-Import Liga: Übernahme Mannschaftsergebnisse
+^ CLM-Admin-Menü: Anpassung an J!3.5.0
++ View Mannschaft: Spielplan auch wenn kein DSB-Bezug
++ View Mannschaft: Spielplan mit Ergebnis 
+# Class CLMForm: SelectVerein
++ MTurniere: Feinwertung Buchholzsumme mit Streichwertung
+
+- - - - - 3.2.4 - [08-03-2016] - - - - - - - - - - - - - - - - - - - -
+^ Überarbeitung engl. Textfiles für Backend
+# SWT-Import Liga: Nachbesserung bei kampflos und Erg.korrektur nach TO
++ Ligen: Rundendaten von-bis sowie Termin pro Paarung möglich
++ Ergänzung Engl. Anwendung: Check-Routine, Termine, Runden-Details 
+# Einzelturniere: Rangliste Elo mit Streichwertung
++ Ergänzung Engl. Anwendung: Export Grading File einschl. ExcelWriterXML
+# DeWIS Auswertung: Vereinsname aus der aktuellen Saison
+# Liga-Ranking: Buchholz-Wertung auf Mannschaftspunkte umgestellt
++ SWT-Import: erweitert auf Schul- und Freizeitturniere ohne DSB-Bezug
++ SWT-Import: erweitert auf M-turniere ohne Erfassung der Einzelergebnissen
+# M-Turnier: Erweiterung Wertebereich Feinwertungen auf decimal(7,3)
+# Liga-Submenü bei Bedarf 2-spaltig
+
+- - - - - 3.2.3 - [22-01-2016] - - - - - - - - - - - - - - - - - - - -
++ Menüeintagstyp für Liga-Paarungsliste
+^ Sprachfilezuordnung für umgestellte Views
+# raw-View Verein für Extern-Zugriff
+# Manuelle Aktualisierung von Vereinen und Spielern: Behandlung von Sonderzeichen
+# Admin-View Vereine: Berechtigung für Freigeben u. Sperren
+# DWZ-Übersicht pdf-Liste
++ Einbau engl. Version insb. Ref.-No anstelle Mitgliedsnummer sowie Datenübernahme
++ Englische Sprachfiles
+# Datumbehandlung in umgestellten Views
+# Datumsdarstellung bei englischer Sprache
+# Sprachsteuerung in umgestellten Views insb. Tabellenanzeigen
++ CLM-Benutzergruppen sprachabhängig
+# Paarungsliste falls Teilnehmernummer nicht gewünscht
+# Frontend-Mitgliederliste: Sortiermöglichkeiten
++ Einbau engl. Version insb. Ref.-No anstelle Mitgliedsnummer in den PDF-Views
+# Ergebnismeldung: Reaktivierung 'gesperrt'-Markierung
+# Admin-View Saisons: Sortierung nach Reihenfolge
+# SWT-Import Liga: Paarungsnummer aus Einzelergebnis ignorieren
+# Default Werte nun bei neuen Tabelleneinträgen setzen
+# SWT-Import Turnier: Prüfung Start- und Enddatum
+# Spieler-View: Darstellung DWZ
+^ PDF-Ausgaben: Umstellung Format von clm_pdf auf pdf
+# Admin-View MTurniere: Kopieren bei ausreichenden Rechten wurde verweigert
+# Admin-View Einzelturniere: Detailpflege nach 'Runden löschen' war nicht möglich
+^ Überarbeitung Textfiles für CLM-Benutzergruppen
+# Ligen: Rundenturnier mit zusätzlichen Runden wieder möglich
+
+- - - - - 3.2.2 - [05-10-2015] - - - - - - - - - - - - - - - - - - - -
+# Config: Email-Adressen mit Umlauten erlauben
+# Config: Ergebnisdienst-Name mit Umlauten möglich
+# Logging: Einträge bei Meldelistenabgabe und Vereinspflege im FE aktiviert
+# Admin-View Datenbank: Text-Korrektur
+# Meldeliste in FE: vollständige Vorbelegung bei Korrektur
+# Meldeliste in FE: kleine Text-Korrektur
+# Mannschaftsaufstellung (pdf): korrektes Ignorieren von Null-Sätzen
++ Funktion zum nochmaligen Einspielen aller DB Änderungen seit DB Version 0 (CLM 3)
+# Ligatabelle: Berücksichtigung von Antrittspunkte bei SRV-Spalten 
+# Saisonstatistik: Codebereinigung zur Vermeidung von Warnungen
+# pgn-Vorlage-Datei: Ablage im Pfad 'pgn'
+# Spieler-View: Anzeige bei Spielgemeinschaften
+ 
+- - - - - 3.2.1 - [19-08-2015] - - - - - - - - - - - - - - - - - - - -
++ Aktivierung Saisonstatistik
++ pgn-Vorlage-datei mit Internationalisierung der Namen
+# Ligen: Berliner Wertung als 4.Ranglistenkriterium
+# Ligastatistik: Auflistung mit Anz kampfloser Partien
+# Spieler-View: Mannschaften mit Ranglisten
+^ Admin-Liga-View: kleine Designänderungen
+# Ergebnismeldung: Mannschaftsturnier im KO-System
+# Ligaheft: Spielfrei nicht letzte Mannschaft
++ Aktivierung der html-Mails bei Ergebniseingabe
+# FE Vereindaten Ändern
+
+- - - - - 3.2.0 - [16-07-2015] - - - - - - - - - - - - - - - - - - - -
+Startpunkt des changelog

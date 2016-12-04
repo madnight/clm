@@ -1,0 +1,47 @@
+CHANGELOG mod_clm_turnier
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+> -> Compatibility
+- -> Removed
+! -> Note
+
+- - - - - 3.0.8 - [22-05-2015] - - - - - - - - - - - - - - - - - - - -
+^ CLM Klassen können nun direkt aufgerufen werden
+
+- - - - - 3.0.7 - [04-04-2015] - - - - - - - - - - - - - - - - - - - -
+^ itemid nun überschreibbar
+
+- - - - - 3.0.6 - [03-02-2015] - - - - - - - - - - - - - - - - - - - -
+# Nur veröffentlichte Turniere werden zur Einzelauswahl angeboten
+
+- - - - - 3.0.5 - [23-01-2015] - - - - - - - - - - - - - - - - - - - -
+^ Konfigurationsmöglichkeiten in "Erweitert" vergrößert
+
+- - - - - 3.0.4 - [22-01-2015] - - - - - - - - - - - - - - - - - - - -
+! Vermeidung gleicher Versionsnummern in verschiedenen CLM Versionen
+# $params wurde ungünstig überschrieben
+
+- - - - - 1.0.4 - [21-01-2015] - - - - - - - - - - - - - - - - - - - -
+^ Link auf die inof. DWZ falls berechnet
+- Support für 1.5.x
+
+- - - - - 1.0.3 - [16-01-2015] - - - - - - - - - - - - - - - - - - - -
+# Nur veröffentlichte Turniere innerhalb der Kategorie werden aufgelistet
+^ Umstellung wegen Turnieren mit bis zu 4 Durchgängen
+
+- - - - - 1.0.2 - [25-05-2014] - - - - - - - - - - - - - - - - - - - -
+^ PHP 4.x Unterstützung enfernt, Abfrage aktualisiert -> Joomla 3.2 Support
+
+- - - - - 1.0.1 - [05-03-2014] - - - - - - - - - - - - - - - - - - - -
+# nur aktuell gewählte Runde als aktiven Link kennzeichnen
+
+- - - - - 1.0.0 - [22-02-2014] - - - - - - - - - - - - - - - - - - - - -
+! start release
+

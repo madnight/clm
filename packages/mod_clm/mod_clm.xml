@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>CLM Modul</name>
+	<creationDate>30.11.2015</creationDate>
+	<author>CLM Project</author>
+	<copyright>(C) Copyright 2008-2015 by CLM Project</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>fishpoke@fishpoke.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>3.2.6</version>
+	<description>MOD_CLM_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_clm">mod_clm.php</filename>
+		<filename>changelog.txt</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl/</folder>
+		<folder>language/</folder>
+
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="JACTION_ADMIN">
+				<field name="mt_type" type="list" default="0" label="MOD_CLM_PARAM_TYPE_LABEL" description="MOD_CLM_PARAM_TYPE_DESC">
+					<option value="0">MOD_CLM_PARAM_TYPE_0</option>
+					<option value="1">MOD_CLM_PARAM_TYPE_1</option>
+					<option value="2">MOD_CLM_PARAM_TYPE_2</option>
+				</field>
+				
+				<field name="ids" type="text" default="" label="MOD_CLM_PARAM_IDS_LABEL" description="MOD_CLM_PARAM_IDS_DESC">
+				</field>
+				
+				<field type="spacer" name="global_links" label="MOD_CLM_SPACER_LINKS_GLOBAL" />
+				
+				<field name="links" type="radio" default="1" label="MOD_CLM_PARAM_LINK_LABEL" description="MOD_CLM_PARAM_LINK_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="termine" type="radio" default="1" label="MOD_CLM_PARAM_DATES_LABEL" description="MOD_CLM_PARAM_DATES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="vereine" type="radio" default="1" label="MOD_CLM_PARAM_CLUBS_LABEL" description="MOD_CLM_PARAM_CLUBS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				
+				<field type="spacer" name="other_links" label="MOD_CLM_SPACER_LINKS_SPECIAL" />
+				
+				<field name="dwzliga" type="radio" default="1" label="MOD_CLM_PARAM_RATING_LABEL" description="MOD_CLM_PARAM_RATING_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="statistik" type="radio" default="1" label="MOD_CLM_PARAM_STATS_LABEL" description="MOD_CLM_PARAM_STATS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+<fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+		<field name="itemid" type="text" default="" label="ITEMID" description="ITEMID_DESC"/>
+
+   </fieldset>	
+		</fields>
+	</config>
+</extension>
+ 

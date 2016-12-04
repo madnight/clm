@@ -1,0 +1,17 @@
+
+.minitab {}
+.minitab div { padding: 2px; }
+
+.rang { }
+.rang div, .rang_ab div, .rang_auf div, .rang_auf_evtl div, .rang_ab_evtl div  { text-align: center; }
+.rang_auf div { background: #C0DF82; }
+.rang_auf_evtl div { background: #DCEDBA; }
+.rang_ab div { background: #E7A9A9; }
+.rang_ab_evtl div  { background: #F3D6D6; }
+
+.team { }
+.team div { text-align: left; }
+
+.mp { }
+
+.bp { }

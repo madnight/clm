@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>CLM DWZ Modul</name>
+	<author>CLM Projekt</author>
+	<creationDate>18.04.2015</creationDate>
+	<copyright>(C) Copyright 2012 - 2015 by CLM Project</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>dc6iq@gmx.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>3.1.1</version>
+	<description>
+		<![CDATA[
+			 <h3>Chess League Manager : DWZ Modul</h3>
+			 <p>Modul zur Auflistung von Vereinen für den öffentlichen Bereich.</p>
+			 <p><a target="_blank" href="http://www.chessleaguemanager.de">CLM Projekt Homepage</a></p>
+			 <p>&copy; Fred Baumgarten [<a target="_blank" href="http://sv-hennef.de">sv-hennef.de</a>]</p>
+			 ]]>
+		 </description>
+
+	<files>
+		<filename module="mod_clm_dwz">mod_clm_dwz.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>escape_dwz.php</filename>
+		<filename>changelog.txt</filename>
+		<folder>tmpl/</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="basic">
+				<field 
+				name="zps" 
+				type="text" 
+				default="" 
+				label="ZPS der Vereine angeben" 
+				description="Wählen Sie die ZPS der benötigten Vereine (Beispiel: '66205,63609' für SV Hennef und DJK Herdorf). Die angegebenen Vereine müssen in der Saison aktiv sein." />
+				<field name="all_clubs" type="radio" default="0" label="Alle Vereine anzeigen">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="view" type="radio" default="0" label="Link auf">
+					<option value="0">DWZ Ansicht</option>
+					<option value="1">Vereinsdetails</option>
+				</field>
+			</fieldset>
+				<fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+   	</fieldset>	
+		</fields>
+	</config>
+	
+</extension>

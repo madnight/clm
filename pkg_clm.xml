@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="2.5" method="upgrade">
+ <name>CLM - Core</name>
+ <creationDate>26.10.2016</creationDate>
+ <packagename>clm</packagename>
+ <author>CLM Team</author>
+ <version>3.3.3</version>
+ <packager>CLM Team</packager>
+ <packagerurl>www.chessleaguemanager.de</packagerurl>
+ 	<description>
+		<![CDATA[
+	 	<img src="components/com_clm/images/clm_logo.png" alt="" align="left" />
+		 <h3>CLM - Chess League Manager :</h3>
+		 <p>Die CLM Komponente ist ein Ligamanager für Schachligen.</p>
+		 <a href="http://www.chessleaguemanager.de" target="blank">CLM Projekt Homepage</a>  |  <a href="http://www.chessleaguemanager.de/index.php?option=com_kunena" target="blank">Support Forum</a>
+		 <br><br>
+		 <u>CLM Team :</u>
+		 <ul type="square">
+		 <li>Thorsten Ahlers, Support Forum &amp; Homepage</li>
+		 <li>Klaus Bärthel, PDF Viewer, Mannschaftsturniere</li>
+		 <li>Andreas Dorn, DWZ Auswertung &amp; ELO Base Export</li>
+		 <li>Helge Frowein, Einzelturniermodus</li>
+		 <li>Daniel Mohr, Support Forum &amp; Homepage</li>
+		 <li>Fjodor Schäfer, Design CLM &amp; Projektseite</li>
+		 <li>Thomas Schwietert, Projektgründer</li>
+		 ]]>
+	</description>
+ <files folder="packages">
+   <file type="component" id="com_clm" >com_clm</file>
+   <file type="module" id="mod_clm" client="site" >mod_clm</file>
+   <file type="module" id="mod_clm_archiv" client="site" >mod_clm_archiv</file>
+   <file type="module" id="mod_clm_dwz" client="site" >mod_clm_dwz</file>
+   <file type="module" id="mod_clm_log" client="site" >mod_clm_log</file>
+   <file type="module" id="mod_clm_minitab" client="site" >mod_clm_minitab</file>
+   <file type="module" id="mod_clm_termine" client="site" >mod_clm_termine</file>
+   <file type="module" id="mod_clm_turnier" client="site" >mod_clm_turnier</file>
+ </files>
+ <updateservers>
+    <server type="extension" priority="1" name="CLM Update Site (Testing)">http://chessleaguemanager.de/updateServer/testing1.xml</server>
+ </updateservers>
+</extension>
